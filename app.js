@@ -1,11 +1,12 @@
 const app = Vue.createApp({
     data(){
         return {
+            url: 'http://www.brandonburt.com',
             showBooks: true,
             books: [
-                { title: 'name of the wind', author: 'patrick mahomes'},
-                { title: 'the way of kings', author: 'brandon burt'},
-                { title: 'the final empire', author: 'brandon burt'},
+                { title: 'name of the wind', author: 'patrick mahomes', img: 'assets/purdy.jpg'},
+                { title: 'the way of kings', author: 'brandon burt', img: 'assets/ku.jpg'},
+                { title: 'the final empire', author: 'brandon burt', img: 'assets/vegas.jpg'},
             ]
         }
     },
