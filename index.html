@@ -37,9 +37,10 @@
     <div id="app">
         <!-- attribute binding -->
         <!--<a v-bind:href="url">best website ever</a> -->
+        
         <div v-if="showBooks">
             <ul>
-                <li v-for="book in books" :class="{ fav: book.isFav}">
+                <li v-for="book in filteredBooks" :class="{ fav: book.isFav}">
                     <img :src="book.img" :alt="book.title">
                     <h3>{{ book.title }}</h3>
                     <p>{{ book.author }}</p>
